@@ -106,6 +106,8 @@ with aba1:
         "Saldo líquido": df.liquido * fator,
         "Poupança (ref.)": poup.liquido * fator,
     })
+    graf.index = graf.index / 12
+    graf.index.name = "Anos"
     st.line_chart(graf)
 
 with aba2:
