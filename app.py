@@ -54,6 +54,7 @@ ipca0, ok2 = bcb(13522, 4.50)
 
 st.title("Simulador de Renda Fixa")
 st.caption("Simulação educativa, não é recomendação de investimento.")
+st.caption("Criado por Bruno Muniz")
 
 with st.expander("Premissas de mercado (editáveis)"):
     st.caption("Taxas atualizadas pelo Banco Central." if (ok1 and ok2) else "Sem conexão com o BC: valores padrão, edite abaixo.")
